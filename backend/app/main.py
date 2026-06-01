@@ -6,7 +6,6 @@ from app.models.vacancy import Vacancy
 from app.services.data_store import load_json, save_json
 from app.services.matching_engine import match_candidates_to_vacancy
 
-
 app = FastAPI(title="AI Recruitment Matching System")
 
 
@@ -38,16 +37,13 @@ def create_vacancy(vacancy: Vacancy):
 
 @app.post("/match")
 def match_vacancy(vacancy: Vacancy):
-    candidates_raw = load_json("candidates.json")
+    candidates_data = load_json("candidates.json")
 
-    candidates = [
-        Candidate(**candidate)
-        for candidate in candidates_raw
-    ]
+    candidates = [Candidate(**c) for c in candidates_data]
 
-    matches = match_candidates_to_vacancy(
-        vacancy,
-        candidates
-    )
+    matches = match_candidates_to_vacancy(vacancy, candidates)
 
-    return matches
+    return {
+        "vacancy": vacancy.role_title,
+        "matches": matches
+    }
