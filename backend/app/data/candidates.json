@@ -1,1 +1,65 @@
-[]
+[
+  {
+    "id": "cand_001",
+    "name": "Dr Linda White",
+    "registration_status": "FRACGP",
+
+    "role_types": [
+      "GP",
+      "UCC"
+    ],
+
+    "skills": [
+      "GP",
+      "UCC"
+    ],
+
+    "preferred_states": [
+      "QLD"
+    ],
+
+    "avoided_states": [],
+
+    "preferred_locations": [
+      "Sippy Downs",
+      "Sunshine Coast"
+    ],
+
+    "avoided_locations": [],
+
+    "preferred_rate_min": 1800,
+    "preferred_rate_target": 2600,
+
+    "availability": [
+      {
+        "start_date": "2026-06-01",
+        "end_date": "2026-06-30"
+      }
+    ],
+
+    "fifo_preference": false,
+    "rural_remote_preference": "low",
+
+    "engagement": {
+      "average_reply_hours": 4,
+      "last_contact_date": "2026-06-01",
+      "reliability_score": 90,
+      "ghost_count": 0,
+      "ghost_rate": 0
+    },
+
+    "history": {
+      "placements_completed": 5,
+      "placements_accepted": 5,
+      "placements_declined": 1,
+      "acceptance_rate": 0.83
+    },
+
+    "inferred_preferences": [
+      "Prefers Sunshine Coast",
+      "Good UCC fit"
+    ],
+
+    "notes": "Strong candidate for Sippy Downs shifts."
+  }
+]
