@@ -1,5 +1,5 @@
 from pydantic import BaseModel
-from typing import List, Optional
+from typing import List
 
 
 class Vacancy(BaseModel):
@@ -17,20 +17,20 @@ class Vacancy(BaseModel):
 
     block_length_days: int
 
-    rate: Optional[int] = None
-    rate_type: str = "daily"
+    rate: float
+    rate_type: str
 
-    travel_included: bool = False
-    accommodation_included: bool = False
-    car_included: bool = False
+    travel_included: bool
+    accommodation_included: bool
+    car_included: bool
 
-    skills_required: List[str] = []
+    skills_required: List[str]
 
-    rural_remote: bool = False
-    fifo_available: bool = False
+    rural_remote: bool
+    fifo_available: bool
 
-    urgency: str = "medium"
+    urgency: str
 
-    raw_text: Optional[str] = None
+    raw_text: str
 
-    notes: Optional[str] = None
+    notes: str
