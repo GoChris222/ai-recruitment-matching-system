@@ -1,1 +1,38 @@
-[]
+[
+  {
+    "id": "vac_001",
+
+    "client": "Sippy Downs Family Doctors",
+
+    "location": "Sippy Downs",
+    "state": "QLD",
+
+    "role_type": "UCC",
+
+    "start_date": "2026-06-10",
+    "end_date": "2026-06-15",
+
+    "block_length_days": 5,
+
+    "rate": 2600,
+    "rate_type": "daily",
+
+    "travel_included": false,
+    "accommodation_included": false,
+    "car_included": false,
+
+    "skills_required": [
+      "GP",
+      "UCC"
+    ],
+
+    "rural_remote": false,
+    "fifo_available": false,
+
+    "urgency": "high",
+
+    "raw_text": "Sippy Downs UCC shifts available June",
+
+    "notes": "Good Sunshine Coast opportunity."
+  }
+]
