@@ -1,54 +1,23 @@
 # AI Recruitment Matching System
 
-## Overview
-
-AI-powered GP locum recruitment matching system.
-
-Features:
-- Candidate intelligence profiles
-- Vacancy ingestion
-- Matching engine
-- Suitability scoring
-- JSON-based storage
-- FastAPI backend
-
-## Tech Stack
-
-- Python
-- FastAPI
-- Pydantic
-- JSON Storage
-
-## Run Locally
-
-Install dependencies:
+## Run Backend
 
 ```bash
+cd backend
+
 pip install -r requirements.txt
-```
 
-Run server:
-
-```bash
 uvicorn app.main:app --reload
 ```
 
-## API Endpoints
+Backend runs on:
 
-### Health Check
+```bash
+http://127.0.0.1:8000
+```
 
-GET `/health`
+Health check:
 
-### Candidates
-
-GET `/candidates`
-
-### Vacancies
-
-GET `/vacancies`
-
-POST `/vacancies`
-
-### Match Candidates
-
-POST `/match`
+```bash
+http://127.0.0.1:8000/health
+```
